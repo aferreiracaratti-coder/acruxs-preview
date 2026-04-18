@@ -1,0 +1,218 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACRUXS - Store Preview</title>
+  <meta name="description" content="Preview editorial de tienda online para ACRUXS streetwear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="#home" class="logo" aria-label="ACRUXS Home">
+        <img src="assets/logoacru.webp" alt="ACRUXS logo" />
+        <span>ACRUXS</span>
+      </a>
+    </div>
+    <nav class="nav-links" aria-label="Navegacion principal">
+      <a href="#drop">Drop</a>
+      <a href="#shop">Shop</a>
+      <a href="#community">Confirmados</a>
+      <a href="#manifiesto">Manifiesto</a>
+    </nav>
+    <div class="topbar-right">
+      <button class="header-cart" id="headerCart" type="button" aria-label="Carrito">
+        CARRITO
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+      <a href="#shop" class="cta-mini">Compra directa</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-carousel" id="heroCarousel" aria-label="Carrusel de campana">
+        <article class="hero-slide active">
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/heroacru1horizontal.webp" />
+            <img class="hero-media" src="assets/heroacru1.webp" alt="Look ACRUXS editorial 01" />
+          </picture>
+        </article>
+        <article class="hero-slide">
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/heroacru2horizaontal.webp" />
+            <img class="hero-media" src="assets/heroacru2vertical.webp" alt="Look ACRUXS editorial 02" />
+          </picture>
+        </article>
+        <article class="hero-slide">
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/heroacru3horizontal.webp" />
+            <img class="hero-media" src="assets/heroacru3vertical.webp" alt="Look ACRUXS editorial 03" />
+          </picture>
+        </article>
+
+        <div class="hero-gradient" aria-hidden="true"></div>
+
+        <div class="hero-overlay">
+          <p class="eyebrow">SANTIAGO DE CHILE - STREET UNIFORM 2026</p>
+          <h1>VESTIR RUIDO. COMPRAR SIN VUELTAS.</h1>
+          <p>
+            ACRUXS no es solo un feed: es imagen editorial + conversion directa en un solo flujo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#shop">Comprar drop</a>
+            <a class="btn btn-ghost" href="#manifiesto">Ver manifiesto</a>
+          </div>
+        </div>
+
+        <div class="hero-carousel-ui">
+          <button id="heroPrev" class="hero-nav" type="button" aria-label="Imagen anterior">&larr;</button>
+          <div class="hero-dots" id="heroDots" aria-label="Indicadores de carrusel"></div>
+          <button id="heroNext" class="hero-nav" type="button" aria-label="Imagen siguiente">&rarr;</button>
+        </div>
+
+        <span class="hero-tag">DROP 02 / CITY SIGNAL</span>
+      </div>
+    </section>
+
+    <section class="brand-ticker" aria-label="Mensaje de marca continuo">
+      <div class="ticker-track">
+        <p>ACRUXS - COMPRA DIRECTA - SIN ESPERAR DM - STREETWEAR EDITORIAL - ACRUXS - COMPRA DIRECTA - SIN ESPERAR DM - STREETWEAR EDITORIAL -</p>
+        <p aria-hidden="true">ACRUXS - COMPRA DIRECTA - SIN ESPERAR DM - STREETWEAR EDITORIAL - ACRUXS - COMPRA DIRECTA - SIN ESPERAR DM - STREETWEAR EDITORIAL -</p>
+      </div>
+    </section>
+
+    <section class="drop-spotlight" id="drop">
+      <div class="drop-copy">
+        <p class="eyebrow">NUEVO DROP EN VIVO</p>
+        <h2>DROP 02 - CITY SIGNAL CHILE</h2>
+        <p>
+          Nuevo drop liberado con unidades limitadas. Cuando se agota, no vuelve en esta temporada.
+          Compra ahora y asegura tu talle antes del cierre de stock.
+        </p>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <p class="eyebrow">SHOP</p>
+        <h2>Piezas ACRUXS</h2>
+      </div>
+
+      <div class="filter-chips" role="tablist" aria-label="Filtrar productos">
+        <button class="chip active" data-filter="all" type="button">Todo</button>
+        <button class="chip" data-filter="tee" type="button">Remeras</button>
+        <button class="chip" data-filter="hoodie" type="button">Hoodies</button>
+        <button class="chip" data-filter="outerwear" type="button">Outerwear</button>
+        <button class="chip" data-filter="accessory" type="button">Accesorios</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="section-head">
+        <p class="eyebrow">CONFIRMADOS</p>
+        <h2>Comunidad en calle</h2>
+      </div>
+
+      <div class="community-grid">
+        <article>
+          <p>@acruxs.team</p>
+          <strong>"Ahora la gente compra al toque sin escribirnos primero."</strong>
+          <span>Conversion mas directa en drop activo.</span>
+        </article>
+        <article>
+          <p>@clientereal</p>
+          <strong>"Elegi talle, pague y listo. Cero friccion."</strong>
+          <span>Chain Star Tee / M</span>
+        </article>
+        <article>
+          <p>@lookbookstreet</p>
+          <strong>"Se siente marca en serio, no solo IG."</strong>
+          <span>NotHuman Zip / L</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="manifiesto">
+      <p class="manifesto-kicker">"Nacidos de una estrella que jamas ha dejado de brillar."</p>
+      <p>
+        Hace miles de años, en la profundidad del cielo del sur, existia una estrella conocida por su luz
+        inquebrantable. Su nombre es Acrux, el corazon de la constelacion Crux, la cruz del sur.
+      </p>
+      <p>
+        Esta estrella no es como las demas: no solo iluminaba el universo, tambien guiaba a los que se sentian
+        perdidos. Dicen que Acrux era la brujula de los inconformes, los que no encajaban, los que buscaban algo
+        mas alla de lo que el mundo ofrecia.
+      </p>
+      <p>
+        Cada vez que alguien se sentia desconectado del sistema, confundido o invisible, Acrux parpadeaba un poco
+        mas fuerte, como diciendo: "sigue, estoy contigo."
+      </p>
+      <p>
+        Con el paso del tiempo, su energia cruzo dimensiones y cayo a la Tierra en forma de una chispa.
+        Esa chispa desperto a quienes ya no querian pertenecer.
+      </p>
+      <p class="manifesto-sign">Equipo ACRUXS.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Acruxs preview - AngelWebStudio
+  </footer>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-label="Detalle de producto">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar detalle" type="button">&times;</button>
+
+      <div class="modal-gallery">
+        <img id="modalMainImage" src="" alt="Producto ACRUXS" />
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+
+      <div class="modal-info">
+        <p class="eyebrow">PRODUCT DETAIL</p>
+        <h3 id="modalName"></h3>
+        <p class="price" id="modalPrice"></p>
+        <p class="modal-description" id="modalDescription"></p>
+
+        <div class="size-block">
+          <p>Talle</p>
+          <div class="size-options" id="modalSizes"></div>
+        </div>
+
+        <div class="modal-actions">
+          <button id="addCartBtn" class="btn btn-primary full" type="button">Agregar al carrito</button>
+          <button id="buyNowBtn" class="btn btn-ghost full" type="button">Comprar ahora</button>
+        </div>
+        <small>Compra directa en Chile con stock real. Sin esperar DM.</small>
+      </div>
+    </section>
+  </div>
+
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <header class="cart-drawer-head">
+      <h3>CARRITO</h3>
+      <button id="cartDrawerClose" class="cart-drawer-close" type="button" aria-label="Cerrar carrito">&times;</button>
+    </header>
+    <div class="cart-drawer-items" id="cartDrawerItems">
+      <p class="cart-empty">Tu carrito esta vacio.</p>
+    </div>
+    <footer class="cart-drawer-foot">
+      <p>Total</p>
+      <strong id="cartDrawerTotal">$0 CLP</strong>
+    </footer>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
